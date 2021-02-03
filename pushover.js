@@ -52,7 +52,10 @@ Pushover.prototype.send = function(arg1, arg2, arg3, arg4, arg5) {
 			token: this.token,
 			user: this.user,
 			title: arg1,
-			message: arg2
+			message: arg2,
+			priority: 2,
+			retry:60,
+			expire: 3600
 		}, null, null);
 	}
 
